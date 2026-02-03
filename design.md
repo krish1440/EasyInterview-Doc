@@ -16,24 +16,24 @@ The application runs entirely within the user's browser (React Client), communic
 
 ```mermaid
 graph TD
-    Client[User Browser (React App)]
-    Gemini[Google Gemini 2.5 API]
-    Analytics[Vercel Analytics]
+    Client["User Browser (React App)"];
+    Gemini["Google Gemini 2.5 API"];
+    Analytics["Vercel Analytics"];
     
     subgraph Browser_APIs
-        Media[MediaStream (Webcam/Mic)]
-        STT[Web Speech API (STT)]
-        TTS[Web Speech API (TTS)]
+        Media["MediaStream (Webcam/Mic)"];
+        STT["Web Speech API (STT)"];
+        TTS["Web Speech API (TTS)"];
     end
 
-    Client <--> Media
-    Client --> STT
-    Client <-- TTS
+    Client <--> Media;
+    Client --> STT;
+    TTS --> Client;
     
-    Client -- "JSON (Prompt + Context)" --> Gemini
-    Gemini -- "JSON (Response)" --> Client
+    Client -- "JSON (Prompt + Context)" --> Gemini;
+    Gemini -- "JSON (Response)" --> Client;
     
-    Client -- "Events" --> Analytics
+    Client -- "Events" --> Analytics;
 ```
 
 ### 2.2 Core Modules
