@@ -1,9 +1,4 @@
 # System Design Document: EasyInterview
-
-**Version:** 1.0  
-**Status:** Draft  
-**Last Updated:** 2026-02-04
-
 ---
 
 ## 1. Introduction
@@ -108,3 +103,4 @@ The system relies heavily on "System Instructions" sent to Gemini.
 *   **Color Palette:** Indigo (`#4F46E5`) for primary actions, Slate (`#64748B`) for text.
 *   **Typography:** Sans-serif (Inter/system-ui) for readability.
 *   **Feedback:** All interactive elements must have hover states. AI thinking states must show a "Thinking..." or "Listening..." visual indicator.
+
