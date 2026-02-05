@@ -1,0 +1,29 @@
+{
+  "name": "EasyInterview",
+  "description": "AI-powered multimodal interview coaching platform using Google Gemini 2.5",
+  "version": "1.0.0",
+  "type": "hackathon-project",
+  "technologies": [
+    "React 18",
+    "TypeScript",
+    "Tailwind CSS",
+    "Google Gemini 2.5",
+    "Web Speech API",
+    "MediaStream API",
+    "Vite"
+  ],
+  "features": [
+    "Real-time speech recognition",
+    "AI-powered interview simulation",
+    "Multimodal analysis (video + audio)",
+    "Live feedback system",
+    "Performance analytics",
+    "Resume and job description analysis"
+  ],
+  "hackathon": {
+    "theme": "AI-powered career development",
+    "category": "Education/Career Tools",
+    "target_audience": "Job seekers and interview candidates",
+    "innovation": "Combines multimodal AI analysis with real-time feedback for interview preparation"
+  }
+}
